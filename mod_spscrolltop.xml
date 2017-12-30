@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+  <name>MOD_SPEDI_SCROLLTOP</name>
+	<author>SPEDI srl</author>
+	<creationDate>Dicember 2016</creationDate>
+	<copyright>Copyright (C) 1991 - 2016 SPEDI srl. Tutti i diritti riservati.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>sviluppo@spedi.it</authorEmail>
+	<authorUrl>http://www.spedi.it</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_SPEDI_SCROLLTOP_DESC</description>
+    <files>
+        <filename>mod_spscrolltop.xml</filename>
+        <filename module="mod_spscrolltop">mod_spscrolltop.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+    </files>
+    <config>
+      <fields name="params">
+        <fieldset name="basic">
+
+          <field name="scrolltop-position"
+    				type="list"
+            default="right"
+            label="MOD_SPEDI_SCROLLTOP_POSITION"
+    				description="MOD_SPEDI_SCROLLTOP_POSITION_LOAD"
+    			>
+    				<option value="left">MOD_SPEDI_SCROLLTOP_POSITION_LEFT</option>
+    				<option value="right">MOD_SPEDI_SCROLLTOP_POSITION_RIGHT</option>
+    			</field>
+
+          <field
+            name="scrolltop-color"
+            type="color"
+            label="MOD_SPEDI_SCROLLTOP_ICON_COLOR"
+            description="MOD_SPEDI_SCROLLTOP_ICON_COLOR_DESC"
+            default="#65dcdf"
+          />
+
+          <field
+            name="scrolltop-bgcolor"
+            type="color"
+            label="MOD_SPEDI_SCROLLTOP_BG_COLOR"
+            description="MOD_SPEDI_SCROLLTOP_BG_COLOR_DESC"
+            default="#737373"
+          />
+
+        </fieldset>
+
+        <fieldset name="advanced">
+  				<field
+  					name="layout"
+  					type="modulelayout"
+  					label="JFIELD_ALT_LAYOUT_LABEL"
+  					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+           />
+  			</fieldset>
+
+      </fields>
+    </config>
+</extension>
