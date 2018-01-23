@@ -1,0 +1,36 @@
+// @Author: SPEDI srl
+// @Date:   23-01-2018
+// @Email:  sviluppo@spedi.it
+// @Last modified by:   SPEDI srl
+// @Last modified time: 23-01-2018
+// @License: GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+// @Copyright: Copyright (C) SPEDI srl
+
+.scroll-top-block{
+  position:fixed;
+  opacity:0;
+  visibility:hidden;
+  overflow:hidden;
+  z-index:99999999;
+  bottom:-60px;
+  right:-60px;
+  width: 120px;
+  height: 120px;
+  // background: rgb(245,66,32);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+  > i{
+    position: relative;
+    margin-top: 35px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+.scroll-top-block.show{
+  visibility:visible;
+  cursor:pointer;
+  opacity:.6;
+}
+.scroll-top-block.show:hover{opacity:1}
