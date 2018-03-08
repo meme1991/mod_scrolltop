@@ -16,6 +16,6 @@ $scrolltopPosition = $params->get('scrolltop-position');
 //
 $document = JFactory::getDocument();
 
-$document->addScript(JUri::base(true).'/modules/'.$module->module.'/js/scrolltop.min.js');
+$document->addScript(JUri::base(true).'/modules/'.$module->module.'/js/scrolltop.min.js', 'text/javascript', true, false);
 
 require JModuleHelper::getLayoutPath($module->module, $params->get('layout', 'default'));
